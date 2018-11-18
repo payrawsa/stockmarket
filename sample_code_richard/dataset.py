@@ -1,5 +1,5 @@
 from sklearn.preprocessing import MinMaxScaler
-from keras.preprocessing.sequence import TimeSeriesGenerator
+from keras.preprocessing.sequence import TimeseriesGenerator
 import pandas as pd
 
 class Dataset:
