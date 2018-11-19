@@ -66,6 +66,6 @@ class Dataset:
         dataset = dataset[stocks]
 
         for stock in stocks:
-            dataset[stock] = dataset[stock].interpolate(method=interpolation_method)
+            dataset[stock] = dataset[stock].interpolate(method=interpolation_method, limit_direction='both')
 
         return Dataset(dataset.iloc[0:train_end], dataset.iloc[train_end::])
