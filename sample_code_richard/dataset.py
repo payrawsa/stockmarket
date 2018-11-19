@@ -28,7 +28,7 @@ class Dataset:
         scaler = MinMaxScaler(feature_range=(0, 1))
         for stock in list(self._train.columns.unique().levels[0]):
             data = scaler.fit_transform(self._train[stock])
-            generators[stock] = TimeSeriesGenerator(data, data, length=length,
+            generators[stock] = TimeseriesGenerator(data, data, length=length,
                                                     sampling_rate=sampling_rate, stride=stride, batch_size=batch_size)
 
         return generators
