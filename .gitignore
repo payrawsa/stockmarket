@@ -1,0 +1,7 @@
+*.ipynb
+.ipynb_checkpoints
+data
+
+sample_code_richard/__pycache__/
+sample_code_richard/__pycache__/
+
