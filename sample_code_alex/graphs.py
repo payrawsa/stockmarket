@@ -6,7 +6,7 @@ def get_graph(graph_type=None, summaries_dir=None, *args, **kwargs):
 	assert graph_type.lower() in ['train', 'valid', 'test'], 'Invalid graph type'
 	assert summaries_dir !=None, 'summary directory not defined'
 	if graph_type=='train':
-		assert 'lr' in kwargs.keys(), 'training graph must have learing rate'
+		assert 'lr' in kwargs.keys(), 'training graph must have learning rate'
 
 	graph = tf.Graph()
 	with graph.as_default():
